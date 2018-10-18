@@ -15,4 +15,4 @@ Write a function called insertShiftArray which takes in an array and the value t
 * Jennifer Carrigan
 
 ## Whiteboard
-![Whiteboard](/images/whiteboard.jpg)
+![Whiteboard](./images/whiteboard.jpg)
