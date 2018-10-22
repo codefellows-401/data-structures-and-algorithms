@@ -1,31 +1,73 @@
+//* Safety Goggles ON
 'use strict';
 
-// Classes
-class Node {
-  constructor (name) {
-    this.name = name;
-    this.next = null;
-  }
-}
-class Cohort {
-  constructor (node) {
-    this.head = node;
-  }
+//---------------------------------------
+//* Singly Linked List
+//---------------------------------------
+//* Constructor - Nodes
+function Node(value, next) {
+  this.value = value;
+  this.next = null;
+  this.head = true;
 }
 
-// Create linked list
-const codeFellows = new Cohort('js401d27');
+//* Class - LinkedList
+class SingleList {
+  constructor () {
+    this.head = null;
+    this.id = 0;
+  }
 
-// Create linked list nodes
-const nodeJB = new Node('JB');
-const nodeBen = new Node('Ben');
-const nodeRyan = new Node('Ryan');
-const nodeGeorge = new Node('George');
-const nodeSarah = new Node('Sarah');
-const nodeJen = new Node('Jen');
-const nodeTim = new Node('Tim');
-const nodeDavid = new Node('David');
-const nodeEmery = new Node('Emery');
-const nodeAllie = new Node('Allie');
-const nodeAshton = new Node('Ashton');
+  //* Method - Add node to head
+  insert(value) {
+    let newNode = new Node(value);
+    let headCheck = this.head;
+    
+    // if head is not present, set newNode as current head
+    if(headCheck === null) {
+      this.head = newNode;
+      this.id++;
+      return newNode;
+    }
 
+    // if head exists, place node at the end of the stack
+    while(headCheck.next) {
+      headCheck = headCheck.next;
+    }
+    headCheck.next = newNode;
+    this.id++;
+    return newNode;
+  }
+
+  //* Method - Includes Value
+  includes(searchValue) {
+    let currentNode = this.head;
+    while(currentNode) {
+      if(currentNode.value === searchValue) return true;
+      currentNode = currentNode.next;
+    }
+    return false;
+  }
+  
+  //* Method - Print linkedlist contents
+  print() {
+    console.log(this.value);
+  }
+}
+
+//---------------------------------------
+//* Execution Code
+//---------------------------------------
+// Create new linkedlist
+let bioware = new SingleList();
+
+// Add nodes to linkedlist
+bioware.insert('Mass Effect');
+bioware.insert('Mass Effect 2');
+bioware.insert('Mass Effect 3');
+bioware.insert('Dragons Age: Origins');
+bioware.insert('Star Wars: Knights of the Old Republic');
+bioware.insert('Jade Empire');
+
+// Test Search
+// console.log(bioware);
