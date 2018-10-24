@@ -1,4 +1,4 @@
-# 04: Linked Lists
+# 04: Linked List
 ## Overview
 - Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
 - Within your LinkedList class, include a head property. Upon instantiation, an empty Linked List should be created.
@@ -14,11 +14,13 @@
 - [x] Setup repository
 - [x] Create/update README.md
 - [X] Whiteboard
-- [] Code solution
-- [] Code test-cases
-- [] Submit to git
-- [] Turn in assignment
+- [ ] Code solution
+- [ ] Code test-cases
+- [ ] Submit to git
+- [ ] Turn in assignment
 
 ## Developers
-* Ben Harris
-* George McCadden III (offsite)
+* Ben Harris (solo)
+
+## Whiteboard
+- Not required for this specific assignment
