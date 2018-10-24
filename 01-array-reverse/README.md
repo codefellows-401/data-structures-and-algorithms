@@ -20,4 +20,4 @@ Write a function called reverseArray which takes an array as an argument. Withou
 * Emery Parks
 
 ## Whiteboard
-![Whiteboard](/assets/array_reverse.jpg)
+![Whiteboard](./assets/array_reverse.jpg)

@@ -13,11 +13,12 @@
 ## Checklist
 - [x] Setup repository
 - [x] Create/update README.md
-- [] Structure code with comments (algorithm)
-- [] Create solution
-- [] Testing
+- [X] Whiteboard
+- [] Code solution
+- [] Code test-cases
 - [] Submit to git
 - [] Turn in assignment
 
 ## Developers
 * Ben Harris
+* George McCadden III (offsite)
