@@ -1,0 +1,15 @@
+{
+  "name": "ll-insertions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ll-insertions.js",
+  "scripts": {
+    "test": "jest --coverage --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
+}
