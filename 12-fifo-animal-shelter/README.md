@@ -1,16 +1,19 @@
-# 11: Queues with Stacks
+# 12: FIFO Animal Shelter
 ## Overview
-Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue class will implement the standard queue interface, but will internally only utilize 2 Stack objects. Ensure that you create your class with the following methods:
-
-- enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach.
-- dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
-
-The Stack instances have only push, pop, and peek methods. You should use your own Stack implementation. Instantiate these Stack objects in your PseudoQueue constructor.
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+Implement the following methods:
+- enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
+- dequeue(pref): returns either a dog or a cat. If pref, a string, is ‘cat’ return the longest-waiting cat. If pref is ‘dog’, return the longest-waiting dog. For anything else, return either a cat or a dog.
 
 ## Developers
 * Ben Harris
-* Emery Parks
+* Ryan Milton
 
 ## Whiteboard
-![Whiteboard1](./images/whiteboard1.jpg)
-![Whiteboard1](./images/whiteboard2.jpg)
+There are multiple images, so please review each separately. And sorry about the vertical images -- Markdown is doing that auto-magically ¯\\_(ツ)_/¯
+
+![Whiteboard1](./images/1-problem-domain.jpg)
+![Whiteboard2](./images/2-visualization.jpg)
+![Whiteboard3](./images/3-algorithm.jpg)
+![Whiteboard4](./images/4-code.jpg)
+![Whiteboard5](./images/5-big-o.jpg)
