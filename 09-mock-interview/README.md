@@ -7,4 +7,5 @@ Today, you and a peer will take turns interviewing each other with a code challe
 * Trevor Stam
 
 ## Whiteboard
+![Rubric](./images/rubric.jpg)
 ![Whiteboard](./images/whiteboard.jpg)
