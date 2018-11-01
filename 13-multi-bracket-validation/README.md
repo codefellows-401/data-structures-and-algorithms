@@ -22,8 +22,5 @@ Just wanted to mention that. :)
 ## Whiteboard
 There are multiple images, so please review each separately. And sorry about the vertical images -- Markdown is doing that auto-magically ¯\\_(ツ)_/¯
 
-![Whiteboard1](./images/1-problem-domain.jpg)
-![Whiteboard2](./images/2-visualization.jpg)
-![Whiteboard3](./images/3-algorithm.jpg)
-![Whiteboard4](./images/4-code.jpg)
-![Whiteboard5](./images/5-big-o.jpg)
+![Whiteboard1](./images/1.jpg)
+![Whiteboard2](./images/2.jpg)
