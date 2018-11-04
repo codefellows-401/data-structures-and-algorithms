@@ -8,50 +8,118 @@
 // n/a
 
 //------------------------------
-//* Classes
+//* Node Class
 //------------------------------
 export class Node {
-  constructor(value, left=null, right=null, parent=null) {
+  constructor(value, left, right) {
     this.value = value;
     this.left = left;
     this.right = right;
-    this.parent = parent;
   }
 }
 
-export class BinaryTree {
+//------------------------------
+//* Binary Search Tree
+//------------------------------
+export class BST {
   constructor(root=null) {
     this.root = root;
+    this.add = BST.add;
+    this.inOrder = BST.inOrder;
   }
 
-  // Root -> Left -> Right
+  // Traversal Methods
   preOrder(node) {
     //code
-    if(!node) return; 
-    console.log(node.value);
-    this.logNode(node.left);
-    this.logNode(node.right);
-
-    return []; // array of node in pre-order
+    if(node !== null) {
+      console.log(this.show() + '');
+      this.preOrder(node.left);
+      this.preOrder(node.right);
+    }
   }
-
-  // Left -> Root -> Right
   inOrder(node) {
-    //code
+    if(node !== null) {
+      this.inOrder(node.left);
+      console.log(this.show() + '');
+      this.inOrder(node.right);
+    }
   }
-
-  // Left -> Right -> Root
   postOrder(node) {
-    //code
+    if (!(node === null)) {
+      this.postOrder(node.left);
+      this.postOrder(node.right);
+      console.log(this.show() + '');
+    }
   }
 
-  // Add a vlaue (visualgo.net)
-  add(node) {
-    //code
+  // Helper Methods
+  show(value) {
+    return this.value;
+  }
+  search(value) {
+    let currNode = this.root;
+    while(currNode !== value) {
+      if(value < currNode.value) {
+        currNode = currNode.left;
+      } else {
+        currNode = currNode.right;
+      }
+      if (currNode === null) {
+        return null;
+      }
+    }
+    return currNode;
+  }
+  add(value) {
+    let newNode = new Node(value, null, null);
+    // if BST root is null then set as root
+    if(this.root === null) {
+      this.root = newNode;
+      console.log('Added node:', value);
+    }
+    // else locate the correct position to add newNode
+    else { 
+      let currNode = this.root;
+      let parentNode = undefined;
+      let keepRunning = true;
+
+      while(keepRunning) {
+        parentNode = currNode;
+        if(value < currNode.value) {
+          currNode = currNode.left;
+          if(currNode === null) {
+            parentNode.left = newNode;
+            keepRunning = false;
+            console.log('Added node:', value);
+            break;
+          }
+        } 
+        else {
+          currNode = currNode.right;
+          if(currNode === null) {
+            parentNode.right = newNode;
+            keepRunning = false;
+            console.log('Added node:', value);
+            break;
+          }
+        }
+      }
+    }
   }
 
-  // Search for value (visaulgo.net)
-  search(node) {
-    //code
+  // Stretch Methods
+  getMin() {
+    let currNode = this.root;
+    while(!(currNode.left === null)) {
+      currNode = currNode.left;
+    }
+    return currNode.value;
+  }
+  getMax() {
+    let currNode = this.root;
+    while(!(currNode.right === null)) {
+      currNode = currNode.right;
+    }
+    return currNode.value;
   }
 }

@@ -4,12 +4,13 @@
   "description": "Create a Node class that has properties for the value stored in the node, the left child node, and the right child node . - Create a BinaryTree class - Define a method for each of the depth first traversals called `preOrder`, `inOrder`, and `postOrder` which takes in a root node, and returns an array of the nodes.",
   "main": "jest.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage --verbose"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "eslint": "^5.8.0",
     "jest": "^23.6.0"
   }
 }
