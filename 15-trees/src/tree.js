@@ -30,9 +30,8 @@ export class BST {
 
   // Traversal Methods
   preOrder(node) {
-    //code
     if(node !== null) {
-      console.log(this.show() + '');
+      console.log(node.value + '');
       this.preOrder(node.left);
       this.preOrder(node.right);
     }
@@ -40,22 +39,19 @@ export class BST {
   inOrder(node) {
     if(node !== null) {
       this.inOrder(node.left);
-      console.log(this.show() + '');
+      console.log(node.value + '');
       this.inOrder(node.right);
     }
   }
   postOrder(node) {
-    if (!(node === null)) {
+    if (node !== null) {
       this.postOrder(node.left);
       this.postOrder(node.right);
-      console.log(this.show() + '');
+      console.log(node.value + '');
     }
   }
 
   // Helper Methods
-  show(value) {
-    return this.value;
-  }
   search(value) {
     let currNode = this.root;
     while(currNode !== value) {
