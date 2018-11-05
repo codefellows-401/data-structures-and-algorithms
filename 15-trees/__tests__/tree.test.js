@@ -9,13 +9,6 @@ import BST from 'BST';
 
 // Test Variables
 let testBST = new BST();
-testBST.insert(18);
-testBST.insert(51);
-testBST.insert(8);
-testBST.insert(33);
-testBST.insert(13);
-testBST.insert(84);
-testBST.insert(26);
 
 //------------------------------
 //* Testing
@@ -23,15 +16,21 @@ testBST.insert(26);
 describe('Traversal Method Tests', () => {
 
   it('Should traverse the BST using preOrder traversal.', () => {
-    //expect(input).toBe(output);
+    let input  = testBST.preOrder();
+    let output = [12,32,36,17,58,93,32,41,52];
+    expect(input).toBe(output);
   });
 
   it('Should traverse the BST using inOrder traversal.', () => {
-    //expect(input).toBe(output);
+    let input  = testBST.inOrder();
+    let output = [18,39,27,6,24,43,5,31,11];
+    expect(input).toBe(output);
   });
 
   it('Should traverse the BST using postOrder traversal.', () => {
-    //expect(input).toBe(output);
+    let input  = testBST.postOrder();
+    let output = [14,23,65,75,81,29,43,34,25];
+    expect(input).toBe(output);
   });
 
 });
