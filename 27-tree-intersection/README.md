@@ -7,5 +7,5 @@ Utilize the Single-responsibility principle: any methods you write should be cle
 * Timothy Li
 
 ## Whiteboard
-![whiteboard1](./images/whiteboard1.jpg)
-![whiteboard2](./images/whiteboard2.jpg)
+![whiteboard1](./images/whiteboard1.JPG)
+![whiteboard2](./images/whiteboard2.JPG)
