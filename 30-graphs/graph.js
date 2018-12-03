@@ -71,21 +71,21 @@ class Graph {
     }
   }
 
-  // Returns all of the nodes in the graph as a collection
-  getNodes() {
+  //* Returns all of the nodes in the graph as a collection
+  // getNodes() {
+  //   // Depth-first traversal || bread-first traversal
+  // }
 
-  }
+  //* Returns a collection of nodes connected to the given node
+  //* Brings in a given node
+  //* Includes the weight from the given node
+  // getNeighbors() {
 
-  // Returns a collection of nodes connected to the given node
-  // Brings in a given node
-  // Includes the weight from the given node
-  getNeighbors() {
+  // }
 
-  }
+  //* Returns the total number of nodes in the graph
+  // size() {
 
-  // Returns the total number of nodes in the graph
-  size() {
-
-  }
+  // }
 
 }
