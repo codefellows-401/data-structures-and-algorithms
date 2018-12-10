@@ -21,9 +21,9 @@ class BinarySearchTree {
       return this;
     } else {
       let current = this.root;
-      while(true) {
-        if(value === current. value) {
-          return "Value already exists";
+      while(current) {
+        if(value === current.value) {
+          return 'Value already exists';
         } else if(value < current.value) {
           if(current.left === null) {
             current.left = newNode;
